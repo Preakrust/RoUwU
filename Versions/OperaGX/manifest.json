@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "EcoleDirectPlus",
+    "version": "1.0",
+    "description": "Extension OperaGX pour EcoleDirecte",
+
+    "icons": {
+        "16": "icons/16.png",
+        "19": "icons/19.png",
+        "38": "icons/38.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+      },
+
+      "content_scripts": [
+        {
+          "js": ["scripts/Inject.js"],
+          "matches": [
+            "https://www.ecoledirecte.com/*"
+          ]
+        }
+      ],
+
+      "action": {
+        "default_popup": "Extension.html"
+      }
+  }
